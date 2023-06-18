@@ -1,6 +1,5 @@
 import streamlit as st
 import pickle
-import nltk
 from nltk.probability import FreqDist
 from nltk.chunk import ne_chunk
 from nltk.tokenize import word_tokenize
