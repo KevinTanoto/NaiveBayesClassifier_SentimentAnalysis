@@ -34,34 +34,34 @@ if st.button("Analyze Sentiment"):
 
 
 # inpss = word_tokenize(input_text)
-inpss = input_text.split()
-tags = pos_tag(inpss)
-fd = FreqDist(inpss)
-freqdist_res = fd.most_common()
+# inpss = input_text.split()
+# tags = pos_tag(inpss)
+# fd = FreqDist(inpss)
+# freqdist_res = fd.most_common()
 
-table_data = [["Word", "Tag", "Antonyms", "Frequency"]]
-for n,(name,count) in enumerate(freqdist_res) :
+# table_data = [["Word", "Tag", "Antonyms", "Frequency"]]
+# for n,(name,count) in enumerate(freqdist_res) :
 
     
-    synsets = wordnet.synsets(name)
-    test = []
-    for synset in synsets:
-        for i in synset.lemmas():
-            anto = [i.name() for i in i.antonyms()]
-            test += anto
+#     synsets = wordnet.synsets(name)
+#     test = []
+#     for synset in synsets:
+#         for i in synset.lemmas():
+#             anto = [i.name() for i in i.antonyms()]
+#             test += anto
 
-    # print(test)
+#     # print(test)
 
-    if test:
-        res1 = test[0]
-    else:
-        res1 = "-"
+#     if test:
+#         res1 = test[0]
+#     else:
+#         res1 = "-"
     
-    table_data.append([name, tags[n][1], res1, count])
+#     table_data.append([name, tags[n][1], res1, count])
 
-st.table(table_data)
+# st.table(table_data)
 
 
-st.write("Named Entity Recognition: ")
-entity = ne_chunk(tags)
-st.table(entity)
+# st.write("Named Entity Recognition: ")
+# entity = ne_chunk(tags)
+# st.table(entity)
