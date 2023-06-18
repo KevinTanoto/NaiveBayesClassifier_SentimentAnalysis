@@ -11,13 +11,13 @@ from nltk.corpus import wordnet
 
 st.title("Sentiment Analysis with Naive Bayes Classifier: Extracting Sentiment, Named Entities, and Antonyms")
 
-st.write("In this project, we develop a sentiment analysis system using a Naive Bayes classifier. The system takes textual input and determines whether the sentiment expressed is negative, positive, or neutral. But it doesn't stop there. Our system goes beyond sentiment analysis and offers additional insights.") 
+st.write("This project develop a sentiment analysis system using a Naive Bayes classifier. The system takes textual input and determines whether the sentiment expressed is negative, positive, or neutral. But it doesn't stop there. Our system goes beyond sentiment analysis and offers additional insights.") 
 
-st.write("Alongside sentiment classification, our program utilizes natural language processing techniques to enhance the analysis. It employs Named Entity Recognition (NER) to extract important entities from the text using the ne_chunk.")
+st.write("Alongside sentiment classification, the program utilizes natural language processing techniques to enhance the analysis. It employs Named Entity Recognition (NER) to extract important entities from the text using the ne_chunk.")
 
-st.write("Furthermore, the program provides an intriguing feature by generating antonyms for the words present in the input sentences. Antonyms offer an interesting contrast, allowing us to explore the opposite sentiment and uncover additional insights within the text.")
+st.write("Furthermore, the program provides antonyms for the words present in the input sentences. Antonyms offer an interesting contrast, allowing user to explore the opposite sentiment and uncover additional insights within the text.")
 
-st.write("Through this project, we aim to create a comprehensive sentiment analysis solution that goes beyond simple sentiment classification. By incorporating NER and antonym generation, we enable users to gain a more holistic understanding of the text and unlock valuable insights from their data.")
+st.write("This project aim to create a sentiment analysis solution that goes beyond simple sentiment classification. By incorporating NER and antonym generation, we enable users to gain a more holistic understanding of the text and unlock valuable insights from their data.")
 
 st.write("Model Accuracy: 79.4751")
 
