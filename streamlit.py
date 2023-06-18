@@ -33,7 +33,8 @@ if st.button("Analyze Sentiment"):
         st.warning("Please enter a sentence for sentiment analysis.")
 
 
-inpss = word_tokenize(input_text)
+# inpss = word_tokenize(input_text)
+inpss = input_text.split()
 tags = pos_tag(inpss)
 fd = FreqDist(inpss)
 freqdist_res = fd.most_common()
