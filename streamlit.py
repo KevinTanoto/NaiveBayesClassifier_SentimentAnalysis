@@ -1,10 +1,10 @@
 import streamlit as st
 import pickle
 from nltk.probability import FreqDist
-from nltk.chunk import ne_chunk
-from nltk.tokenize import word_tokenize
-from nltk.tag import pos_tag
-from nltk.corpus import stopwords, wordnet
+# from nltk.chunk import ne_chunk
+# from nltk.tokenize import word_tokenize
+# from nltk.tag import pos_tag
+# from nltk.corpus import stopwords, wordnet
 
 st.title("Sentiment Analysis with Naive Bayes Classifier: Extracting Sentiment, Named Entities, and Antonyms")
 
