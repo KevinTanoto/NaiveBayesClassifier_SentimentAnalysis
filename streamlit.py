@@ -1,10 +1,7 @@
 import streamlit as st
 import pickle
 
-import nltk
-
-nltk.download('wordnet')
-nltk.download('punkt')
+import nltkmodules
 
 from nltk.probability import FreqDist
 from nltk.chunk import ne_chunk
